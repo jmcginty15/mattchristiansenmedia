@@ -1,0 +1,53 @@
+.Landing {
+    background: var(--primary-transparent);
+    height: 100vh;
+    width: 100vw;
+}
+
+.Landing-inner {
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: fit-content;
+}
+
+.Landing-title, .Landing-subtitle, .Landing-subtitle-bottom, .Landing-subtitle-link {
+    color: var(--highlight);
+}
+
+.Landing-subtitle-bottom {
+    margin-bottom: 0;
+}
+
+.Landing-subtitle-link {
+    margin-top: 0;
+}
+
+.Landing-button {
+    color: var(--highlight);
+    background-color: var(--primary-accent-transparent);
+    border: outset 2px var(--highlight);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+}
+
+.Landing-button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-accent);
+    transition: 250ms;
+}
+
+.Landing-link {
+    color: var(--primary-accent);
+    text-decoration: none;
+}
+
+.Landing-link:hover {
+    color: var(--secondary-accent);
+    transition: 250ms;
+}
