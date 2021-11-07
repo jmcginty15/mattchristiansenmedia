@@ -1,0 +1,50 @@
+.UserCard {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    align-items: center;
+}
+
+.UserCard-title, .UserCard-subtitle {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.UserCard-title {
+    margin-bottom: 0;
+}
+
+.UserCard-info {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-left: 0.5rem;
+}
+
+.UserCard-info-label {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.UserCard-button {
+    grid-column: span 2;
+    color: var(--highlight);
+    background-color: var(--primary-accent-transparent);
+    border: outset 2px var(--highlight);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.UserCard-button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-accent);
+    color: var(--primary-accent);
+    border-color: var(--primary-accent);
+    transition: 250ms;
+}

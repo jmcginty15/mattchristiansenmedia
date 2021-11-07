@@ -1,0 +1,86 @@
+.UserList {
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--highlight);
+    background-color: var(--primary-transparent);
+    border: outset 2px var(--highlight);
+    border-radius: 5px;
+    font-weight: bold;
+    width: 90%;
+    height: fit-content;
+    max-height: 100%;
+}
+
+.UserList-header {
+    border-top: solid 2px var(--highlight);
+    border-bottom: solid 1px var(--highlight);
+    padding: 0.5rem;
+    font-size: 16px;
+}
+
+.UserList-footer {
+    border-top: solid 1px var(--highlight);
+    padding: 0.5rem;
+    font-size: 16px;
+}
+
+#UserList-first-page-header, #UserList-prev-page-header, #UserList-next-page-header, #UserList-last-page-header {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+#UserList-first-page-footer, #UserList-prev-page-footer, #UserList-next-page-footer, #UserList-last-page-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+#UserList-page-nums-header {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#UserList-page-nums-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#UserList-first-page-header:hover, #UserList-prev-page-header:hover, #UserList-next-page-header:hover, #UserList-last-page-header:hover, .UserList-page-num-header:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#UserList-first-page-footer:hover, #UserList-prev-page-footer:hover, #UserList-next-page-footer:hover, #UserList-last-page-footer:hover, .UserList-page-num-footer:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.UserList-page-num {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+
+.UserList-page-num:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#UserList-page-num-current-header {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#UserList-page-num-current-header:hover {
+    cursor: inherit;
+}
+
+#UserList-page-num-current-footer {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#UserList-page-num-current-footer:hover {
+    cursor: inherit;
+}

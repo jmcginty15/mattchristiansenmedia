@@ -1,0 +1,83 @@
+.SearchForm {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    row-gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--highlight);
+    background-color: var(--primary-transparent);
+    border: outset 2px var(--highlight);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+    width: 90%;
+    text-align: left;
+}
+
+.SearchForm-title {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.SearchForm-label {
+    margin-right: 0.5rem;
+}
+
+.SearchForm-input {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border: inset 1px var(--highlight);
+    border-radius: 5px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.SearchForm-input-number {
+    width: 40px;
+}
+
+
+.SearchForm-buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column: span 2;
+}
+
+.SearchForm-button {
+    color: var(--highlight);
+    background-color: var(--primary-accent-transparent);
+    border: outset 2px var(--highlight);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+}
+
+.SearchForm-button-left {
+    margin-right: 0.5rem;
+}
+
+.SearchForm-button-right {
+    margin-left: 0.5rem;
+}
+
+.SearchForm-button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-accent);
+    color: var(--primary-accent);
+    border-color: var(--primary-accent);
+    transition: 250ms;
+}
+
+.SearchForm-searching-label {
+    text-align: center;
+    margin: auto;
+}
+
+.SearchForm-note {
+    grid-column: span 2;
+    font-weight: normal;
+}

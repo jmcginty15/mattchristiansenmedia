@@ -1,8 +1,6 @@
 import './UserCard.css';
 
 const UserCard = ({ user, clearUser }) => {
-    console.log(user);
-
     return (
         <div className="UserCard">
             <h1 className="UserCard-title">{user.name}, {user.age}</h1>

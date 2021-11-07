@@ -1,0 +1,81 @@
+.Dev {
+    background: var(--highlight-transparent);
+    height: 100%;
+    width: 100%;
+    color: var(--primary-accent);
+}
+
+@media (min-width: 768px) {
+    .Dev-inner {
+        padding-left: 50px;
+        padding-right: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: fit-content;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 767px) {
+    .Dev-inner {
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .Dev-title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.Dev-svg {
+    fill: var(--primary);
+}
+
+.Dev-svg:hover {
+    fill: var(--secondary);
+    transition: 250ms;
+}
+
+.Dev-link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.Dev-link:hover {
+    color: var(--secondary);
+    transition: 250ms;
+}
+
+.Dev-highlight {
+    color: var(--primary);
+}
+
+.Dev-button {
+    color: var(--highlight);
+    background-color: var(--primary-accent-transparent);
+    border: outset 2px var(--primary);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.Dev-button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-accent);
+    color: var(--primary);
+    transition: 250ms;
+}
+
+#Dev-button-left {
+    margin-right: 0.5rem;
+}
+
+#Dev-button-right {
+    margin-left: 0.5rem;
+}

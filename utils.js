@@ -5,7 +5,7 @@ const calcAge = (stated, timestamp) => {
     return stated + Math.floor(diff);
 }
 
-const checkMatch = (row, terms) => {
+const checkDatingMatch = (row, terms) => {
     if (terms.name && (!row[1] || row[1].toLowerCase().indexOf(terms.name.toLowerCase()) !== 0)) return false;
 
     const age = parseInt(row[2]) ? calcAge(parseInt(row[2].slice(0, 2)), row[0]) : null;
@@ -21,4 +21,11 @@ const checkMatch = (row, terms) => {
     return true;
 }
 
-module.exports = { checkMatch, calcAge };
+const checkMeetupMatch = (row, terms) => {
+    if (terms.name && (!row[1] || row[1].toLowerCase().indexOf(terms.name.toLowerCase()) !== 0)) return false;
+    if (terms.location && (!row[2] || row[2].toLowerCase().indexOf(terms.location.toLowerCase()) === -1 )) return false;
+
+    return true;
+}
+
+module.exports = { checkDatingMatch, checkMeetupMatch, calcAge };

@@ -1,6 +1,3 @@
-/** Express app for chess tournament organizer. */
-
-
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -16,8 +13,10 @@ app.use(express.json());
 
 const ExpressError = require('./expressError');
 const datingRoutes = require('./routes/dating');
+const meetupRoutes = require('./routes/meetups');
 
 app.use('/dating', datingRoutes);
+app.use('/meetups', meetupRoutes);
 
 /** 404 handler */
 

@@ -1,6 +1,6 @@
 const axios = require('axios');
 const { API_KEY, DATING_SHEET_ID } = require('../config');
-const { checkMatch, calcAge } = require('../utils');
+const { checkDatingMatch, calcAge } = require('../utils');
 const ExpressError = require('../expressError');
 
 // Entry in an individual tournament
@@ -20,7 +20,7 @@ class DatingUser {
         if (politics) terms.politics = politics;
 
         const users = [];
-        for (let row of values) if (checkMatch(row, terms)) users.push({
+        for (let row of values) if (checkDatingMatch(row, terms)) users.push({
             timestamp: row[0],
             name: row[1],
             age: calcAge(parseInt(row[2]), row[0]),
